@@ -27,6 +27,12 @@ defmodule Arc.Storage.GCS.Mixfile do
     """
   end
 
+  def application do
+    [
+      included_applications: [:goth],
+    ]
+  end
+
   defp package do
     [
       maintainers: ["Martide"],
